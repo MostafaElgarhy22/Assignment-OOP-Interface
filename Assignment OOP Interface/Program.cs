@@ -1,4 +1,5 @@
 ﻿using Assignment_OOP_Interface.Q_1;
+using Assignment_OOP_Interface.Q_2;
 
 namespace Assignment_OOP_Interface
 {
@@ -29,6 +30,42 @@ namespace Assignment_OOP_Interface
 
             //IRectangle rectangle = new Rectangle(15, 7);
             //rectangle.DisplayShapeInfo();
+            #endregion
+            #region Q 2
+
+           // IAuthenticationService authenticationService = new BasicAuthenticationService();
+
+            //string username = "Mostafa";
+            //string password = "654321";
+            //string role = "Admin";
+
+            //string username = "Ahmend";
+            //string password = "12554";
+            //string role = "Admin";
+
+            //string username = "Mostafa";
+            //string password = "654321";
+            //string role = "Mahmoud";
+
+
+            //if (authenticationService.AuthenticateUser(username, password))
+            //{
+            //    Console.WriteLine("Authentication successful ");
+
+            //    if (authenticationService.AuthorizeUser(username, role))
+                
+            //        Console.WriteLine("User is authorized.");
+                
+            //    else
+                
+            //        Console.WriteLine("User is not authorized.");
+                
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Authentication failed.");
+            //}
+
             #endregion
             #endregion
 
