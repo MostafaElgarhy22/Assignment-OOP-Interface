@@ -1,5 +1,6 @@
 ﻿using Assignment_OOP_Interface.Q_1;
 using Assignment_OOP_Interface.Q_2;
+using Assignment_OOP_Interface.Q_3;
 
 namespace Assignment_OOP_Interface
 {
@@ -33,7 +34,7 @@ namespace Assignment_OOP_Interface
             #endregion
             #region Q 2
 
-           // IAuthenticationService authenticationService = new BasicAuthenticationService();
+            // IAuthenticationService authenticationService = new BasicAuthenticationService();
 
             //string username = "Mostafa";
             //string password = "654321";
@@ -53,19 +54,30 @@ namespace Assignment_OOP_Interface
             //    Console.WriteLine("Authentication successful ");
 
             //    if (authenticationService.AuthorizeUser(username, role))
-                
+
             //        Console.WriteLine("User is authorized.");
-                
+
             //    else
-                
+
             //        Console.WriteLine("User is not authorized.");
-                
+
             //}
             //else
             //{
             //    Console.WriteLine("Authentication failed.");
             //}
 
+            #endregion
+            #region Q 3
+
+            INotificationService emailService = new EmailNotificationService();
+            emailService.SendNotification("Moeeee@gmail.com", "The Assignment is Perfect");
+
+            INotificationService smsService = new SmsNotificationService();
+            smsService.SendNotification("Mostafa", "Where Are U ?");
+           
+            INotificationService pushService = new PushNotificationService();
+            pushService.SendNotification("Samsung", "Ahmed liked Your Post");
             #endregion
             #endregion
 
